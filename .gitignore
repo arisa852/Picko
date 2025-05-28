@@ -1,0 +1,58 @@
+# -------------------
+# Vue/Vite 基本忽略設定
+# -------------------
+
+# 套件安裝的目錄（npm/yarn/pnpm）
+node_modules/
+
+# 編譯輸出資料夾
+dist/
+build/
+
+# 環境變數檔
+.env
+.env.*   # 像是 .env.local、.env.development 等
+
+# 測試 coverage 報告
+coverage/
+
+# 快取與暫存資料夾
+.cache/
+.temp/
+*.local
+*.tsbuildinfo
+
+# -------------------
+# 編輯器與 IDE 設定檔
+# -------------------
+
+# VSCode 設定
+.vscode/
+
+# JetBrains 系 IDE（如 WebStorm）
+.idea/
+
+# -------------------
+# 系統產生的檔案
+# -------------------
+
+# macOS 系統檔案（你是 Windows，不會用到，但若專案跨平台建議保留）
+.DS_Store
+
+# Windows 系統產生的暫存檔
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# -------------------
+# 日誌檔
+# -------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------
+# Git 設定相關（若你有子模組等）
+.gitmodules
+
