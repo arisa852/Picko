@@ -19,6 +19,10 @@ build/
 # 保留範例檔
 !.env.example
 
+# 本地憑證檔
+*.pem
+
+
 # 測試 coverage 報告
 coverage/
 
