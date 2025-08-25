@@ -68,7 +68,6 @@
         }
 
         & h6 {
-          font-family: 'Noto Sans TC', sans-serif;
           font-size: 1.375rem;
           text-align: center;
           font-weight: bold;
@@ -79,7 +78,7 @@
         }
 
         & p {
-          font-size: 1.1rem;
+          font-size: 1.125rem;
           line-height: 1.5;
           color: #333;
         }

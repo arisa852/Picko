@@ -6,13 +6,15 @@
   <section class="banner">
     <div class="header-space"></div>
     <div class="container">
-      <div class="bn-text">
-        <h1>Picko，幫你決定生活大小事！</h1>
-        <p>
-          不再猶豫，「吃什麼」、「穿什麼」<br />
-          通通交給Picko！
-        </p>
-      </div>
+      <slot>
+        <div class="bn-text">
+          <h1>Picko，幫你決定生活大小事！</h1>
+          <p>
+            不再猶豫，「吃什麼」、「穿什麼」<br />
+            通通交給Picko！
+          </p>
+        </div>
+      </slot>
       <div class="bn-img">
         <img :src="bannerImg" alt="Banner" />
       </div>
@@ -26,13 +28,14 @@
 
   .banner {
     width: 100%;
+    max-width: 100%;
     position: relative;
     background: linear-gradient(to bottom, $primary-color, #fff);
     overflow: hidden;
 
     .container {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1080px;
       position: relative;
       z-index: 3;
       padding: 20px;
@@ -43,19 +46,18 @@
 
       @include respond-to(pad) {
         flex-direction: column;
-        max-width: fit-content;
-        padding: 20px;
+        padding: 40px;
+        max-width: 100%;
       }
       @include respond-to(mobile) {
         flex-direction: column;
-        max-width: fit-content;
-        padding: 20px;
+        padding: 40px;
+        max-width: 100%;
       }
     }
 
     .bn-text {
       width: 50%;
-      font-family: 'poppins', sans-serif;
       display: inline-block;
 
       @include respond-to(pad) {

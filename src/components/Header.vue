@@ -70,7 +70,7 @@
       link: '/wear',
       dropdown: [
         { name: '依天氣', link: '/wear/weather' },
-        { name: '依場合', link: '/wear/occasion' },
+        { name: '依場合', link: '/wear/locasion' },
       ],
     },
     { id: 3, name: '讓我選', link: '/pick' },

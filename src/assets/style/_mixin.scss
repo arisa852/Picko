@@ -1,11 +1,131 @@
-$breakpoints:(
+@use './variables' as *;
+
+
+$breakpoints: (
     'mobile': 320px,
     'pad':768px,
     'desktop':1024px
 );
 
-@mixin respond-to($device){
-    @media screen and (max-width:map-get($breakpoints,$device)) {
+@mixin respond-to($device) {
+    @media screen and (max-width:map-get($breakpoints, $device)) {
         @content;
     }
 }
+
+@mixin heading-style {
+    font-weight: 700;
+    font-size: 2.175rem;
+    color:$title-color;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@mixin minheading-style{
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: $text-color;
+    line-height: 1.5;
+
+}
+
+@mixin subheading-style{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: $title-color;
+    line-height: 1.5;
+
+}
+
+@mixin paragraph-style {
+    font-size: 1.25rem;
+    color: $paragraph-color;
+    line-height: 1.5;
+
+}
+
+@mixin button-style{
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    color: $primary-color;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+//------------------
+// 吃東西區塊樣式(通用版)
+//@param $base-class: 最外層 class 名稱
+//@param $button-max-width: 按鈕最大寬度（預設 150px）
+//-------------------------------------
+
+@mixin eat-section-style($base-class,$button-max-width:150px){
+
+    .#{$base-class}{
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-color;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        margin: 20px auto;
+        overflow: hidden;
+      
+
+        &-image{
+            width: 30%;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+
+
+            img{
+                width: 100%;
+                object-fit: contain;
+                display: block;
+                height: auto;
+                margin: 0 auto;
+            }
+
+        }
+
+        &-text{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-sizing: border-box;
+            margin-left: 20px;
+
+            @include respond-to(mobile){
+                width: 100%;
+
+            }
+
+            h6{
+                @include subheading-style;
+                margin-bottom: 40px;
+            }
+
+            p{
+                @include paragraph-style;
+                margin-bottom: 40px;
+            }
+
+            .eat-button{
+                @include button-style;
+                max-width: $button-max-width;
+            }
+        }
+
+}
+}
+
+    

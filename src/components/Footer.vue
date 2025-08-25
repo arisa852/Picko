@@ -21,9 +21,8 @@
 <style lang="scss" scoped>
   footer {
     width: 100%;
-    background-color: #333;
+    background-color: $text-color;
     padding: 20px 0;
-    font-family: 'Noto Sans TC', sans-serif;
     display: inline-block;
 
     .container {

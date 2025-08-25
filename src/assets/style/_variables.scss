@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+
+
 $primary-color : #6EC5C4;
 $secondary-color :#E9C5D3;
 $tertiary-color :#F7E2A7;
 $quaternary-color :#C9DCE5;
 $quinary-color : #D5B7DC;
 $text-color :#231815;
+$background-color:#f7f7f7;
+$title-color :#333;
+$paragraph-color: #666;
 
-body{
-    font-family: 'poppins', sans-serif;
+
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0;

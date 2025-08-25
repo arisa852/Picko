@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --ext .vue,.js,.ts --fix"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.79",
     "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap-icons": "^1.13.1",
     "vue": "^3.5.13",

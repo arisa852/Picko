@@ -11,7 +11,13 @@ build/
 
 # 環境變數檔
 .env
-.env.*   # 像是 .env.local、.env.development 等
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# 保留範例檔
+!.env.example
 
 # 測試 coverage 報告
 coverage/
