@@ -1,17 +1,17 @@
-1. 專案名稱與介紹
+
 
 # Picko
 
 針對選擇障礙的人，結合 Google Places + 天氣 API，給出穿搭與店家建議的 Vue 3 專案。
 
-2. Demo
+
 
 ## Demo
 
 👉 [線上試用連結](https://xxx.vercel.app)  
 （請允許定位，才能取得附近資料）
 
-3. 功能 Features
+
 
 ## 功能
 
@@ -24,7 +24,7 @@
 
 ✅ 代表已完成，❌/待辦代表之後要補，這樣面試官知道專案進度。
 
-4. 技術棧 Tech Stack
+
 
 ## 技術棧
 
@@ -33,7 +33,7 @@
 - SCSS 模組化（variables, mixins）
 - Google Places API
 
-5. 專案結構（Optional）
+
 
 ## 專案結構
 
@@ -45,7 +45,7 @@ src/
 ├─ composables/ # 共用 hook（useFetch 等）
 └─ router/ # Vue Router 設定
 
-6. 安裝與使用（必須有）
+
 
 ## 安裝與使用
 
@@ -68,7 +68,6 @@ cp .env.example .env.local
 
 npm run dev
 
-7. 未來計劃 / 待辦清單
 
 ## 未來計劃
 
